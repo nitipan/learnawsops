@@ -4,13 +4,6 @@ phases:
   install:
     runtime-versions:
       docker: 18
-    commands:
-      - apk update
-      - apk add python python-dev python
-      - apk add --no-cache py-pip
-      - python -v
-      - pip -v
-      - pip install awscli
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
